@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hal2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/option_menu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Tombol Menu 1 -->
+    <Button
+        android:id="@+id/menu1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="664dp"
+        android:layout_marginEnd="8dp"
+        android:text="Home"
+        app:layout_constraintEnd_toStartOf="@+id/menu2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Tombol Menu 2 -->
+    <Button
+        android:id="@+id/menu2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="664dp"
+        android:layout_marginEnd="8dp"
+        android:text="Profile"
+        app:layout_constraintEnd_toStartOf="@+id/menu3"
+        app:layout_constraintStart_toEndOf="@+id/menu1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="navigateToProfile" />
+
+    <!-- Tombol Menu 3 -->
+    <Button
+        android:id="@+id/menu3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="664dp"
+        android:layout_marginEnd="16dp"
+        android:text="Berita"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/menu2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="navigateToBerita" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="93dp"
+        android:layout_height="62dp"
+        android:text="Aplikasi Chingu"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="351dp"
+        android:layout_height="312dp"
+        android:text="Aplikasi yang panjang seringkali
+        menjadi hambatan bagi pengguna karena kompleksitasnya yang berlebihan. Dengan antarmuka yang rumit dan fitur yang berlimpah, pengguna sering kali merasa kehilangan arah dan kesulitan untuk menavigasi. Selain itu, aplikasi yang panjang juga cenderung memakan banyak ruang penyimpanan di perangkat, menguras daya baterai, dan membuat kinerja perangkat menjadi lambat."
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
